@@ -1,0 +1,109 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  background-color: #F2F2F4;
+}
+h2 {
+  font-size: 1.4em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #31A894;
+  padding: 0.3em;
+  text-align: left;
+  color: white;
+}
+h1 {
+  display: none;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.container {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.header {
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+nav ul {
+  background-color: #31A894;
+  padding: 1em;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 0.6em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+}
+nav ul li a:hover {
+  background-color: pink;
+}
+.firsthalf {
+  margin: 1em 1em;
+}
+.block1 {
+  width: 75%;
+  float: left;
+}
+.block1 img {
+  width: 100%;
+}
+.block2 {
+  padding-top: 3em;
+  width: 25%;
+  float: right;
+  background-color: #B7DCB1;
+}
+.text2 {
+  margin: 0.8em;
+}
+
+@media only screen and (max-width : 768px) {
+  nav ul li {
+    font-size: 0.8em;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 0;
+  }
+  .block2 {
+    padding-top: 1em;
+    float: none;
+    width: 100%;
+    }
+  .block1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px)  {
+    .container {
+      max-width: 100%;
+    }
+
+    nav ul li {
+      font-size: 0.8em;
+      display: block;
+      margin: 5em;
+    }
+    aside {
+      display: none;
+    }
+
+  }
